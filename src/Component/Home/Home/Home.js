@@ -2,6 +2,7 @@ import React from 'react';
 import Categories from '../Categories/Categories';
 import HeroSecetion from '../HeroSection/HeroSecetion';
 import Navbar from '../Navbar/Navbar';
+import Services from '../Services/Services';
 import Support from '../Support/Support';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
             <Navbar />
             <HeroSecetion />
             <Categories />
+            <Services />
             <Support />
         </div>
     );

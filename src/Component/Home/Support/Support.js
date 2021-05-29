@@ -32,7 +32,7 @@ const Support = () => {
         fontWeight: 'bold'
     }
     return (
-        <div className="container pb-3">
+        <div className="container pb-3 mt-5">
             <div className="row">
                 <h2 style={heading}>SUPPORT WE PROVIDED</h2>
                 {
