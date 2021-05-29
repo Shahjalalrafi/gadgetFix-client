@@ -1,0 +1,16 @@
+.heading {
+    color: #04062C;
+    font-weight: bold;
+    text-transform: capitalize;   
+}
+
+.button {
+    background-color: #04062C;
+    color: white;
+    padding: 10px 20px;
+}
+
+.button:hover {
+    background-color: #000;
+    color: #f1f1f1;
+}
