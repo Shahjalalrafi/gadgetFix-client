@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Navbar = () => {
     return (
         <div class="container">
@@ -17,9 +18,6 @@ const Navbar = () => {
                         </li>
                         <li class="nav-item py-2 px-2">
                         <Link style={{color: 'white', textDecoration: 'none'}} to='/dashboard'>Dashboard</Link>
-                        </li>
-                        <li class="nav-item py-2 px-2">
-                            <Link style={{color: 'white', textDecoration: 'none'}} to="/home">Tutorial</Link>
                         </li>
                         <li class="nav-item py-2 px-2">
                             <Link style={{color: 'white', textDecoration: 'none'}} to='/login'>Login</Link>

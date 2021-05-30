@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
 import Sidebar from '../Sidebar/Sidebar';
+import { useHistory } from 'react-router';
 
 const AddService = () => {
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const [imageURL, setImageURL] = useState(null);
+    const history = useHistory()
+
     const onSubmit = data => {
         console.log(data)
         const serviceData = {
@@ -26,7 +29,12 @@ const AddService = () => {
             },
             body: JSON.stringify(serviceData)
         })
-            .then(res => console.log('server side response', res))
+            .then(res => {
+                if(res) {
+                    alert('service added succesfully')
+                    history.push('/')
+                }
+            })
     };
 
 
@@ -50,7 +58,8 @@ const AddService = () => {
             <div className="col-md-2">
                 <Sidebar />
             </div>
-            <div className="col-md-10 pt-5 mt-5">
+
+            <div className="col-md-10 mt-5 pt-5">
                 <h1>Add your Services.</h1>
                 <form className='' onSubmit={handleSubmit(onSubmit)}>
                     <input className="form-control py-2 my2" type='text' placeholder="service name" {...register("name")} /><br />

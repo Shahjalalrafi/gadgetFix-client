@@ -8,6 +8,7 @@ import Login from './Component/Home/Login/Login';
 import { createContext, useState } from 'react';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import Service from './Component/Dashboard/Service/Service';
+import BookedList from './Component/Dashboard/BookedList/BookedList';
 
 export const UserContext = createContext()
 
@@ -25,17 +26,21 @@ function App() {
             <ServiceDetails />
           </PrivateRoute>
 
-          <Route path='/dashboard'>
+          <PrivateRoute path='/dashboard'>
             <AdminPannel />
-          </Route>
+          </PrivateRoute>
 
-          <Route path='/addService'>
+          <PrivateRoute path='/addService'>
             <AddService />
-          </Route>
+          </PrivateRoute>
           
-          <Route path='/all-services'>
+          <PrivateRoute path='/all-services'>
             <Service />
-          </Route>
+          </PrivateRoute>
+          
+          <PrivateRoute path='/booking-list'>
+            <BookedList />
+          </PrivateRoute>
           
           <Route path='/login'>
             <Login />

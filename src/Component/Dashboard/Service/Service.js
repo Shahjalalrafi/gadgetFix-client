@@ -18,7 +18,6 @@ const Service = () => {
             </div>
             <div className="col-md-10 pt-5 mt-5">
                 <h2>Our service</h2>
-                <p>{allService.name}</p>
                 <div className="row">
                     <div className="col-md-12"  >
                         <table className='col-md-12'>
