@@ -1,8 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
 import { Link } from 'react-router-dom';
-=======
->>>>>>> 2a52ac19e0f62bef51ef25fe6f912e2670a46d82
 
 const Navbar = () => {
     return (

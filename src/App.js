@@ -7,6 +7,7 @@ import AddService from './Component/Dashboard/AddService/AddService';
 import Login from './Component/Home/Login/Login';
 import { createContext, useState } from 'react';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
+import Service from './Component/Dashboard/Service/Service';
 
 export const UserContext = createContext()
 
@@ -30,6 +31,10 @@ function App() {
 
           <Route path='/addService'>
             <AddService />
+          </Route>
+          
+          <Route path='/all-services'>
+            <Service />
           </Route>
           
           <Route path='/login'>

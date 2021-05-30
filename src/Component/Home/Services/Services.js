@@ -1,10 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import img1 from '../../../Images/camera.png'
-import img2 from '../../../Images/computer.png'
-import img3 from '../../../Images/smartphone.png'
-import img4 from '../../../Images/trusted1.png'
-import img5 from '../../../Images/kilian-seiler-PZLgTUAhxMM-unsplash (1).jpg'
-import img6 from '../../../Images/gadget1.jpg'
 import styles from './Services.module.css'
 import { Link } from 'react-router-dom';
 

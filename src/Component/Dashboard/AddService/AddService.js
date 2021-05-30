@@ -50,11 +50,7 @@ const AddService = () => {
             <div className="col-md-2">
                 <Sidebar />
             </div>
-<<<<<<< HEAD
-            <div className="col-md-10 mt-5 pt-5">
-=======
-            <div className="col-md-10">
->>>>>>> 2a52ac19e0f62bef51ef25fe6f912e2670a46d82
+            <div className="col-md-10 pt-5 mt-5">
                 <h1>Add your Services.</h1>
                 <form className='' onSubmit={handleSubmit(onSubmit)}>
                     <input className="form-control py-2 my2" type='text' placeholder="service name" {...register("name")} /><br />
@@ -64,7 +60,6 @@ const AddService = () => {
                     <input className="form-control py-2 my2" type="file" onChange={handleImageUpload} /> <br />
                     <input type="submit" />
                 </form>
-
             </div>
         </div>
     );
