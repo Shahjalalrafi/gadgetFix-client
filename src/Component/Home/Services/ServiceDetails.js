@@ -3,7 +3,6 @@ import { useHistory, useParams } from 'react-router';
 import { UserContext } from '../../../App';
 import Navbar from '../Navbar/Navbar';
 import { useForm } from "react-hook-form";
-// import axios from 'axios';
 
 const ServiceDetails = () => {
     const [logedInUser, setLogedInUser] = useContext(UserContext)
@@ -66,14 +65,6 @@ const ServiceDetails = () => {
                         <h2>price: {price}</h2>
                     </div>
                     <div className="col-md-4">
-                        {/* <form className='form' action="">
-                            <input type="text" defaultValue={logedInUser.email} placeholder='email' className="form-control mt-5 m-2" />
-                            <input type="text" defaultValue={logedInUser.name} placeholder='name' className="form-control m-2" />
-                            <input type="text" placeholder='number' className="form-control m-2" />
-                            <input type="number" defaultValue={price} placeholder='price' className="form-control m-2" />
-
-                            <input className='form-control m-2' style={{background: 'black', color: 'white'}} type="submit" />
-                        </form> */}
 
                         <form className='' onSubmit={handleSubmit(onSubmit)}>
                             <input className="form-control py-2 my2" type='text' defaultValue={logedInUser.email} placeholder="Your Email" {...register("email")} /><br />

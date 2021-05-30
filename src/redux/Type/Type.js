@@ -1,3 +1,4 @@
 export const ActionType = {
-    
+    SET_SERVICE: "SET_SERVICE",
+    SELECTED_SERVICE: "SELECTED_SERVICE"
 }

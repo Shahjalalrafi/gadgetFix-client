@@ -1,16 +1,33 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Services.module.css'
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { SetService } from '../../../redux/Action/Action';
 
 const Services = () => {
+    const allService = useSelector(state => state.allService.service)
+    const dispatch = useDispatch()
 
-    const [allService, setAllService] = useState([])
+    const fetchService = async () => {
+        fetch('https://desolate-citadel-65976.herokuapp.com/service')
+        .then(res => res.json())
+        .then(data => {
+            dispatch(SetService(data))
+        })
+    }
 
     useEffect(() => {
-        fetch('https://desolate-citadel-65976.herokuapp.com/service')
-            .then(res => res.json())
-            .then(data => setAllService(data))
+        fetchService()
     }, [])
+
+
+    // const [allService, setAllService] = useState([])
+
+    // useEffect(() => {
+    //     fetch('https://desolate-citadel-65976.herokuapp.com/service')
+    //         .then(res => res.json())
+    //         .then(data => setAllService(data))
+    // }, [])
 
     return (
         <div className="container text-center">

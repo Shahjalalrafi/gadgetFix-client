@@ -62,6 +62,5 @@ function App() {
 
 export default App;
 
-// http://tf.wpcashcow.com/goru/#
-// https://htmldemo.hasthemes.com/hono/hono/blog-single-sidebar-left.html
-// https://htmldemo.hasthemes.com/hono/hono/index-4.html
+// live site: https://gadget-fix-23e64.web.app/
+// server-code:https://github.com/arifsujon/gadget-fix-server
