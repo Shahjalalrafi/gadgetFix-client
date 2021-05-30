@@ -1,13 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Navbar from '../../Home/Navbar/Navbar';
 import './Sidebar.css'
 
 const Sidebar = () => {
     return (
         <div>
-            <div class="sidebar">
-                <a class="active" href="#home">Booking list</a>
-                <a href="#news">Add Service</a>
-                <a href="#contact">My Service</a>
+            <Navbar />
+            <div class="sidebar pt-5 mt-5">
+                <ul className='list-unstyled'>
+                    <Link to='/booking-list'><li class="active">Booking list</li></Link>
+                    <Link to='/addService'>
+                        <li >Add Service</li>
+                    </Link>
+                    <Link to='services'>
+                        <li>My Service</li>
+                    </Link>
+                </ul>
             </div>
         </div>
     );
